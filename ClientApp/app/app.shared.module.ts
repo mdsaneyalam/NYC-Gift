@@ -9,6 +9,7 @@ import { HomeComponent } from './components/home/home.component';
 import { FetchDataComponent } from './components/fetchdata/fetchdata.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { StoreService } from "./Services/store.service";
 
 @NgModule({
     declarations: [
@@ -28,6 +29,9 @@ import { FooterComponent } from './components/footer/footer.component';
             { path: 'fetchdata', component: FetchDataComponent },
             { path: '**', redirectTo: 'dashboard' }
         ])
+    ],
+    providers: [
+        StoreService
     ]
 })
 export class AppModuleShared {

@@ -1,0 +1,15 @@
+﻿.card-text {
+font-size:1em;
+
+}
+
+.card-body {
+    padding-left:10px;
+}
+
+.hm-white-slight img {
+    position: relative;
+    width: 350px;
+    height: 175px;
+    overflow: hidden;
+}

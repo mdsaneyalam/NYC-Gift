@@ -33,7 +33,15 @@
   <ItemGroup>
     <None Include="wwwroot\assets\fonts\nucleo-icons.svg" />
     <None Include="wwwroot\assets\fonts\nucleo-icons.woff2" />
+    <None Include="wwwroot\assets\fonts\roboto\Roboto-Bold.woff2" />
+    <None Include="wwwroot\assets\fonts\roboto\Roboto-Light.woff2" />
+    <None Include="wwwroot\assets\fonts\roboto\Roboto-Medium.woff2" />
+    <None Include="wwwroot\assets\fonts\roboto\Roboto-Regular.woff2" />
+    <None Include="wwwroot\assets\fonts\roboto\Roboto-Thin.woff2" />
+    <None Include="wwwroot\assets\img\lightbox\default-skin.svg" />
     <None Include="wwwroot\assets\img\loading-bubbles.svg" />
+    <None Include="wwwroot\assets\img\svg\arrow_left.svg" />
+    <None Include="wwwroot\assets\img\svg\arrow_right.svg" />
     <None Include="wwwroot\assets\js\core\bootstrap.min.js" />
     <None Include="wwwroot\assets\js\core\jquery.3.2.1.min.js" />
     <None Include="wwwroot\assets\js\core\popper.min.js" />
