@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { StoreService } from "../../Services/store.service";
+//import { StoreService } from "../../Services/store.service";
+import { Http } from "@angular/http";
+import 'rxjs/add/operator/map';
+
 
 
 @Component({
@@ -8,15 +11,22 @@ import { StoreService } from "../../Services/store.service";
     styleUrls: ['./home.component.css']
 
 })
-export class HomeComponent implements OnInit {
-    stores: any[];
+export class HomeComponent{
+    public stores: Stores[];
 
-    constructor(private storeService: StoreService) { }
+   constructor(public http: Http) {
+       http.get('/api/stores').subscribe(result => {
+           this.stores = result.json() as Stores[];
+       }, error => console.error(error));
+   }
 
-    ngOnInit() {
-       // this.storeService.getStores().subscribe(stores => this.stores == stores);
+    
 
+}
 
-    }
-
+interface Stores {
+    name: string;
+    address: string;
+    phone: string;
+    
 }
